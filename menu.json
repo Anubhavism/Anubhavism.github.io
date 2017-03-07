@@ -1,0 +1,95 @@
+[
+	
+	{
+		"id": 1,
+		"name": "Apple",
+		"price": 40,
+		"quantity": 1		
+	},
+	{
+		"id": 2,
+		"name": "Banana",
+		"price": 50,
+		"quantity": 1
+	},
+	{
+		"id": 3,
+		"name": "Cherry",
+		"price": 80,
+		"quantity": 1
+	},
+	{
+		"id": 4,
+		"name": "Coconut",
+		"price": 100,
+		"quantity": 1
+	},
+	{
+		"id": 5,
+		"name": "Cranberry",
+		"price": 120,
+		"quantity": 1	
+	},
+	{
+		"id": 6,
+		"name": "Guava",
+		"price": 50,
+		"quantity": 1
+	},
+	{
+		"id": 7,
+		"name": "Grape",
+		"price": 40,
+		"quantity": 1
+	},
+	{
+		"id": 8,
+		"name": "Mango",
+		"price": 120,
+		"quantity": 1
+	},
+	{
+		"id": 9,
+		"name": "Lemon",
+		"price": 10,
+		"quantity": 1
+	},
+	{
+		"id": 10,
+		"name": "Orange",
+		"price": 70,
+		"quantity": 1
+	},
+	{
+		"id": 11,
+		"name": "Papaya",
+		"price": 90,
+		"quantity": 1
+	},
+	{
+		"id": 12,
+		"name": "Plum",
+		"price": 60,
+		"quantity": 1
+	},
+	{
+		"id": 13,
+		"name": "Pineapple",
+		"price": 140,
+		"quantity": 1
+	},
+	{
+		"id": 14,
+		"name": "Strawberry",
+		"price": 160,
+		"quantity": 1
+	},
+	{
+		"id": 15,
+		"name": "Watermelon",
+		"price": 75,
+		"quantity": 1
+	}
+
+]
+

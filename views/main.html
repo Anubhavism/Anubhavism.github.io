@@ -1,0 +1,25 @@
+
+<div ng-controller="MainCtrl">
+	<div id="searchDiv">
+	<input type="text" ng-model="search" placeholder="Search.." />
+	</div>
+	<hr/>
+	
+	<div class="main">
+         <a href="" data-toggle="modal" data-target="#myModal"><div ng-controller="CartCtrl" class="menuDiv" ng-repeat="dish in dishes | filter: search">
+                <img ng-src="static-data/{{dish.image}}" width="100px" height="100px" />
+                <div class="mask">
+                    <h2>{{dish.name}}</h2>
+                    <p>{{dish.price | currency:"₹":0}}</p>
+                    <a href="" ng-click="addCart(dish)">add to cart</a>
+                </div>
+            </div>
+          </a>
+		          
+    </div>
+	<hr/>
+</div>
+
+
+
+

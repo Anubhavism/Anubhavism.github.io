@@ -1,0 +1,42 @@
+<div ng-controller="CartCtrl">
+	<h1>My Cart</h1>
+	<div class="row col-md-12">
+		<div class="col-md-8">
+			<div ng-repeat="fruit in order.cart" class="mainCart">
+				<img ng-src="static-data/{{fruit.image}}" class="img-rounded" width="200px" height="200px"/>
+				<div class="desCart">
+					<p>{{fruit.name}}</p>
+					<button class="btn" ng-click="subCart(fruit)">-</button>
+					<input type="number" value="1" ng-model="fruit.quantity" readonly="readonly" />
+					<button class="btn" ng-click="addCart(fruit)">+</button>
+					<a href="" ng-click="removeFruit(fruit)" >remove</a>
+					<p>{{fruit.quantity*fruit.price | currency:"₹":0}}</p>
+				</div>
+				<br/>
+			</div>
+		</div>
+
+		<div class="col-md-4">
+			<div class="well">
+				<p>Total Quantity
+					<span style="float: right;">{{order.totalQuantity}}</span>
+				</p>
+				<br>
+				<p>Delivery Charges
+					<span style="float: right;">FREE</span>
+				</p>
+				<br>
+				<p>Total Price
+					<span style="float: right;">{{order.totalPrice| currency:"₹":0}}</span>
+				</p>
+			</div>
+			<button class="btn btn-success">Checkout</button>
+			<button class="btn btn-danger" ng-click="clearCart()">Clearcart</button>
+		</div>
+
+		
+	</div>
+	<br><br>
+
+</div>
+

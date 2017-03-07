@@ -97,7 +97,7 @@
 		font-size: 1.3em;
 		font-weight: bold;
 	}
-	#frontContent a{
+	#frontContent a,.emptyCart a{
 		margin-top: 50px;
 		padding: 12px;
 		background-color: #39c7ce;
@@ -107,7 +107,7 @@
 		color: white;
 		font-size: 1.3em;
 	}
-	#frontContent a:hover{
+	#frontContent a:hover,.emptyCart a:hover{
 		background-color: white;
 		text-decoration: none;
 		color: #39c7ce;
@@ -178,8 +178,8 @@
 		transition:background-color 0.8s;
 	}
 	.main{
-		margin-left: 15%;
-		width: 85%;
+		margin: 0 10%;
+		width: 80%;
 		text-align: center;
 
 		
@@ -243,4 +243,6 @@
 	.mainCart:hover{
 		border-bottom:0.6px solid #39c7ce;
 	}
-	
+	.emptyCart{
+		text-align: center;
+	}

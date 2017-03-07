@@ -2,9 +2,8 @@ myApp.factory('userService', function userService(){
 	var obj={
 		cart: [],
 		totalQuantity: 0,
-		totalPrice: 0
+		totalPrice: 0,
 	};	
-
 obj.addToCart= function(newItem){
 	for(i=0; i < obj.cart.length;i++){
         if(obj.cart[i].id == newItem.id){
@@ -14,7 +13,7 @@ obj.addToCart= function(newItem){
           return;
         }
     }
-    	obj.cart.push(newItem);
+    	  obj.cart.push(newItem);
         obj.cart[i].quantity += 1;
         obj.totalPrice += obj.cart[i].price;
         obj.totalQuantity += 1;

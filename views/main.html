@@ -6,15 +6,20 @@
 	<hr/>
 	
 	<div class="main">
-         <a href="" data-toggle="modal" data-target="#myModal"><div ng-controller="CartCtrl" class="menuDiv" ng-repeat="dish in dishes | filter: search">
+         <div ng-controller="CartCtrl" class="menuDiv" ng-repeat="dish in dishes | filter: search">
                 <img ng-src="static-data/{{dish.image}}" width="100px" height="100px" />
                 <div class="mask">
                     <h2>{{dish.name}}</h2>
                     <p>{{dish.price | currency:"₹":0}}</p>
-                    <a href="" ng-click="addCart(dish)">add to cart</a>
+                    <button class="btn btn-primary btn-sm" ng-click="addCart(dish)">add to cart</button>
+                    <!-- <div ng-hide="order.temp">
+                    	<button class="btn" ng-click="subCart(dish)">-</button>
+						<input type="number" ng-model="dish.quantity" readonly="readonly" />
+						<button class="btn" ng-click="addCart(dish)">+</button>
+                    </div> -->
                 </div>
             </div>
-          </a>
+         
 		          
     </div>
 	<hr/>

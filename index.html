@@ -1,36 +1,32 @@
 <!DOCTYPE html>
-<html ng-app="shopApp">
-	<head>
-		<meta charset="utf-8">
-	    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	    <title>Shopping Cart</title>
-	    <meta name="description" content="">
-	    <meta name="viewport" content="width=device-width">
-	    <link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
-	    <link rel="stylesheet" type="text/css" href="styles/style.css">
+<html ng-app="fino">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Finomena</title>
+	
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	
 
-	</head>
-	<body>
-		<header>
-			<h1>FruShop</h1>
-			<nav  class="cl-effect-1">
-					<a href="#/">Home</a>
-					<a href="#/main">Menu</a>
-					<a href="#/cart">Go to cart</a>
-			</nav>
 
-		</header>
 
-		<br>
-		<div ng-view=""></div>
-
-		<script src="angular.min.js"></script>
-		<script src="app.js"></script>
-		<script src="scripts/controllers/main.js"></script>
-		<script src="scripts/controllers/cart.js"></script>
-		<script src="scripts/service.js"></script>
-		<script src="bootstrap.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	</body>
+	
+</head>
+<body>
+	<div ng-view=""></div>
+	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-route.min.js"></script>
+	<script src="scripts/app.js"></script>
+	<script src="scripts/controller/result.js"></script>
+	<script src="scripts/controller/quiz.js"></script>
+	<script src="scripts/controller/main.js"></script>
+	<script src="scripts/service.js"></script>
+	<script src="https://www.gstatic.com/charts/loader.js"></script>
+</body>
 </html>

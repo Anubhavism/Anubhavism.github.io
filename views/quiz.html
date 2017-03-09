@@ -1,0 +1,18 @@
+<div ng-controller="QuizCtrl" class="demo-card-wide mdl-card mdl-shadow--2dp">
+	<div class="mdl-card__title">
+		<div class="mdl-layout-spacer"></div>
+    	<h2 class="mdl-card__title-text">Welcome to Finomena Quiz,{{data.names}}!!</h2>
+    	<div class="mdl-layout-spacer"></div>
+  	</div>
+	<div class="mdl-card__supporting-text" ng-repeat="question in data.content">
+		
+		<div class="ques-box" ng-show="data.ques_index == $index">
+			
+			<h1 class="mdl-card__title-text">{{question.id}}.{{question.ques}}</h1>
+			<ul class="mdl-list">
+				<li class="mdl-list-item mdl-js-ripple-effect options-class" ng-repeat="option in question.options" ng-click="setSelected(option.id)">{{option.label}}</li>
+			</ul>
+		</div>
+	</div>
+</div>
+

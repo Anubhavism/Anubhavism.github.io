@@ -1,6 +1,6 @@
 'use strict';
 
-var myApp= angular.module('shopApp',[]);
+var myApp= angular.module('fino',['ngRoute']);
 
 myApp.config(function($routeProvider){
 	$routeProvider
@@ -8,16 +8,15 @@ myApp.config(function($routeProvider){
 			templateUrl: 'views/front.html',
 			controller: 'MainCtrl'
 		})
-		.when('/main',{
-			templateUrl: 'views/main.html',
-			controller: 'MainCtrl'
+		.when('/quiz',{
+			templateUrl: 'views/quiz.html',
+			controller: 'QuizCtrl'
 		})
-		.when('/cart',{
-			templateUrl: 'views/cart.html',
-			controller: 'CartCtrl'
+		.when('/result',{
+			templateUrl: 'views/result.html',
+			controller: 'ResultCtrl'
 		})
 		.otherwise({
 			redirectTo: '/'
 		});
 }).run(['$rootScope',  function() {}]);
-

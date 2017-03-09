@@ -1,47 +1,32 @@
-myApp.factory('userService', function userService(){
+myApp.factory('dataService',function($http,$window){
 	var obj={
-		cart: [],
-		totalQuantity: 0,
-		totalPrice: 0,
-	};	
-obj.addToCart= function(newItem){
-	for(i=0; i < obj.cart.length;i++){
-        if(obj.cart[i].id == newItem.id){
-          obj.cart[i].quantity += 1;
-          obj.totalPrice += obj.cart[i].price;
-          obj.totalQuantity += 1;
-          return;
+		content:{},
+		answers:[],
+		ques_index:0,
+		score:0,
+		names:""
+	};
+	$http.get('static-data/questions.json').then(function(response){
+		 obj.content=response.data;
+	});
+	obj.setTheSelected=function(idSelectedVote){
+		obj.answers.push(idSelectedVote);
+   		if (obj.ques_index >= obj.content.length -1){
+            obj.ques_index = -1;
         }
-    }
-    	  obj.cart.push(newItem);
-        obj.cart[i].quantity += 1;
-        obj.totalPrice += obj.cart[i].price;
-        obj.totalQuantity += 1;
-}
-obj.subTheItem=function(newItem){
-	for(i=0; i < obj.cart.length;i++){
-        if(obj.cart[i].id == newItem.id){
-          obj.cart[i].quantity -= 1;
-          obj.totalPrice -= obj.cart[i].price;
-          obj.totalQuantity -= 1;
-          return;
+        else{
+        	obj.ques_index++;
         }
-    }
-}
-obj.removeTheFruit=function(newItem){
-	for(i=0; i < obj.cart.length;i++){
-		 if(obj.cart[i].id == newItem.id){
-		 	obj.totalQuantity-=obj.cart[i].quantity;
-		 	 obj.totalPrice -= obj.cart[i].price*obj.cart[i].quantity;
-		 	  obj.cart.splice(i,1);
-		 }
-	}
+        if(obj.ques_index==-1){
+			for(i=0;i<obj.answers.length;i++){
+				if(obj.answers[i]==obj.content[i].correct)
+				obj.score++;
+			}
+			$window.location.href="#/result";
+		}
 
-}
-obj.clearTheCart=function(){
-	obj.cart.splice(0,obj.cart.length);
-	obj.totalQuantity=0;
-	obj.totalPrice=0;
- }
- return obj;	
+	};
+
+
+	return obj;
 });

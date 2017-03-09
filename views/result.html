@@ -1,34 +1,42 @@
-<div ng-controller="ResultCtrl" class="demo-card-wide mdl-card mdl-shadow--2dp mdl-layout__content">
+<div class="p+" ng-controller="ResultCtrl">
+    <div class="card">
+        <div class="card__img card__img--top">
+            <div class="tc-white-1 p+" flex-container="row" flex-column="12">
+    			<div flex-item="12"><div class="p+ filler"></div></div>
 
-	<div class="mdl-card__title">
-		<div class="mdl-layout-spacer"></div>
-    	<h1 class="mdl-card__title-text">Result</h1>
-    	<div class="mdl-layout-spacer"></div>
-    	<a class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" ng-click="data.reset()" href="#/">
-  		<i class="material-icons">home</i>
-		</a>
-    	<div class="mdl-layout-spacer"></div>
-  	</div>
-  	<div class="mdl-card__supporting-text">
-			<h1 class="mdl-card__title-text">Your Score is {{data.score}}/5</h1>
-			<div class="mdl-grid">
-				
-				<div id="donutchart" class="mdl-cell mdl-cell--12-col mdl-cell--4-col-phone"></div>
-				
 			</div>
-			<div class="ques-box" ng-repeat="question in data.content">
-				<h1 class="mdl-card__title-text">{{question.id}}.{{question.ques}}</h1>
-				<ul class="mdl-list">
-					<li class="mdl-list-item mdl-js-ripple-effect options-class" ng-repeat="option in question.options" ng-class="setColor(option,question)">{{option.label}}<i class="material-icons red600" ng-show="setColor(option,question)=='incorrect'">error</i><i class="material-icons green600" ng-show="setColor(option,question)=='correct'">done</i></li>
-				</ul>
-			<hr/>
-		</div>
-	</div> 
-	<div class="mdl-card__actions mdl-card--border">
-    	<a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" ng-click="data.reset()" href="#/">
-  		Play Again
-		</a>
-  	</div>
+ 			<!-- <lx-button lx-color="orange" lx-type="fab" ng-click="data.reset()" href="#/"><i class="material-icons">home</i></lx-button> -->
+            <span class="fs-headline tc-white-1 display-block center-items">Result : Your Score is {{data.score}}/5</span>
 
-	
+        </div>
+        <div class="p+">
+            <div class="p+ pt0">
+            	<div class="tc-white-1 p+" flex-container="column" flex-column="12" flex-align="space-between center">
+	                <div flex-item="12" id="donutchart"></div>
+                </div>
+                <div class="p+" flex-container="row" flex-column="16" flex-wrap flex-gutter="24">
+			        <div flex-item="6" ng-repeat="question in data.content" class="ques-box">
+				        <span class="fs-title display-block mb">{{question.id}}.{{question.ques}}</span>
+				 
+				        <div class="divider divider--dark"></div>
+				 
+				        <ul class="list mt++">
+				            <li class="list-row list-row--has-separator" ng-repeat="option in question.options" ng-class="setColor(option,question)">
+				                <div class="list-row__content">
+				                    <span>{{option.label}}
+				                    <i class="material-icons red600" ng-show="setColor(option,question)=='incorrect'">error</i><i class="material-icons green600" ng-show="setColor(option,question)=='correct'">done</i></span>
+				                </div>
+
+				            </li>
+				            
+				        </ul>
+			    	</div>
+    			</div>
+            </div>
+        </div>
+         <div class="card__actions">
+            <lx-button lx-color="pink" lx-type="flat" href="#/" ng-click="data.reset()">Play Again</lx-button>
+        </div>
+    </div>
 </div>
+

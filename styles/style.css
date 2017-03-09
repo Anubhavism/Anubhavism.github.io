@@ -1,76 +1,27 @@
-
-.demo-card-wide-1.mdl-card,.demo-card-wide.mdl-card{
-  width: 96%;
-  margin: 1% 2%;
-
- 
-}
-.demo-card-wide-1 > .mdl-card__title {
-  color: #fff;
-  height: 300px;
-  background: url('../static-data/friends.jpg') center / cover;
-  text-align: center;
-}
-.mdl-card__title-text{
-	width: 70%;
-}
-.demo-card-wide > .mdl-card__title a{
-	margin-top: 250px;
+.filler{
 	
-	margin-right: 25%;
-
-}
-.demo-card-wide > .mdl-card__title {
-  color: #fff;
-  height: 300px;
-  background-color: indigo;
-  text-align: center;
-}
-.demo-card-wide-1 > .mdl-card__menu {
-  color: #fff;
-  
-}
-.center-items{
-	justify-content: center;
-	margin: auto;
-}
-.mdl-card__supporting-text h1{
-	color: black;
-}
-.mdl-cart__supporting-text{
-	margin-left: 20%;
-	text-align: center;
-}
-.front-page{
-	
+	background-color: indigo;
 	height: 200px;
 }
+.material-icons.green600 { color: green;float: right; }
+.material-icons.red600 { color: red;float: right; }
 
-.ques-box{
-	width: 60%;
-	margin: 3% 5%;
-	color: black;
+.card__actions{
+	text-align: center;
 }
-.options-class{
-	border-bottom: 0.5px solid gray;
-	padding: 20px;
-	margin-left: 10%;
-	cursor: pointer;
-	width: 75%;
+.center-items{
+	text-align: center;
+	margin-bottom: 3%;
 }
+#donutchart{
+	
+	}
 .incorrect{
   	border-bottom: 0.5px solid red;
 }
 .correct{
 	border-bottom: 0.5px solid green;
 }
-.material-icons.green600 { color: green;float: right; }
-.material-icons.red600 { color: red;float: right; }
-
-#donutchart{
-	
-
-}
-.mdl-card__actions{
-	text-align: center;
+.ques-box{
+	margin: 60px;
 }

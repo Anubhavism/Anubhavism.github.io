@@ -4,7 +4,7 @@ myApp.factory('dataService',function($http,$window){
 		answers:[],
 		ques_index:0,
 		score:0,
-		names:""
+		names:"ram"
 	};
 	$http.get('static-data/questions.json').then(function(response){
 		 obj.content=response.data;

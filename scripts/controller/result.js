@@ -24,7 +24,7 @@ myApp.controller('ResultCtrl',function($scope,dataService){
         var options = {
           title: 'Final Result',
           pieHole: 0.4,
-          colors:['indigo','red']
+          colors:['indigo','#ed3d46']
         };
 
         var chart = new google.visualization.PieChart(document.getElementById('donutchart'));

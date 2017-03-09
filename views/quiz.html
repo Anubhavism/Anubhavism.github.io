@@ -1,22 +1,34 @@
-<div ng-controller="QuizCtrl" class="demo-card-wide mdl-card mdl-shadow--2dp">
-	<div class="mdl-card__title">
-		<div class="mdl-layout-spacer"></div>
-    	<h1 class="mdl-card__title-text">Welcome to Finomena Quiz{{data.names}}!!</h1>
-    	<div class="mdl-layout-spacer"></div>
-    	<a class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" ng-click="data.reset()" href="#/">
-  		<i class="material-icons">home</i>
-		</a>
-		<div class="mdl-layout-spacer"></div>
-  	</div>
-	<div class="mdl-card__supporting-text" ng-repeat="question in data.content"  ng-if="data.ques_index == $index">
-		
-		<div class="ques-box">
-			
-			<h1 class="mdl-card__title-text">{{question.id}}.{{question.ques}}</h1>
-			<ul class="mdl-list">
-				<li class="mdl-list-item mdl-js-ripple-effect options-class" ng-repeat="option in question.options" ng-click="setSelected(option.id)">{{option.label}}</li>
-			</ul>
-		</div>
-	</div>
-</div>
+<div class="p+" ng-controller="QuizCtrl">
+    <div class="card">
+        <div class="card__img card__img--top">
+            <div class="tc-white-1 p+" flex-container="row" flex-column="12">
+    			<div flex-item="12"><div class="p+ filler"></div></div>
 
+			</div>
+ 			<!-- <lx-button lx-color="pink" lx-type="fab" ng-click="data.reset()" href="#/"><i class="material-icons">home</i></lx-button> -->
+            <span class="fs-headline tc-white-1 display-block center-items">Hi {{data.names}}</span>
+
+        </div>
+ 		<div class="p+ center-items" flex-container="column" flex-wrap flex-align="space-between center">
+	        <div flex-item="6" ng-repeat="question in data.content"  ng-if="data.ques_index == $index">
+	        <span class="fs-title display-block mb">{{question.id}}.{{question.ques}}</span>
+	 
+	        <div class="divider divider--dark"></div>
+	 
+	        <ul class="list mt++">
+	            <li class="list-row list-row--has-separator" ng-repeat="option in question.options" ng-click="setSelected(option.id)">
+	                
+	                <div class="list-row__content">
+	                    <lx-button lx-color="pink" lx-type="flat"><span>{{option.label}}</span></lx-button>
+	                </div>
+	            </li>
+	            
+	        </ul>
+	    	</div>
+    	</div>
+    	<div class="card__actions">
+            <lx-button lx-color="pink" lx-type="flat" href="#/" ng-click="data.reset()">Start Again</lx-button>
+        </div>
+        
+    </div>
+</div>

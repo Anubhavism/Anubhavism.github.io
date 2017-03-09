@@ -1,6 +1,6 @@
 'use strict';
 
-var myApp= angular.module('fino',['ngRoute']);
+var myApp= angular.module('fino',['ngRoute','lumx']);
 
 myApp.config(function($routeProvider){
 	$routeProvider
@@ -20,3 +20,5 @@ myApp.config(function($routeProvider){
 			redirectTo: '/'
 		});
 }).run(['$rootScope',  function() {}]);
+    
+

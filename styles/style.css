@@ -1,7 +1,7 @@
 
 .demo-card-wide-1.mdl-card,.demo-card-wide.mdl-card{
-  width: 90%;
-  margin: 1% 5%;
+  width: 96%;
+  margin: 1% 2%;
 
  
 }
@@ -11,9 +11,13 @@
   background: url('../static-data/friends.jpg') center / cover;
   text-align: center;
 }
+.mdl-card__title-text{
+	width: 70%;
+}
 .demo-card-wide > .mdl-card__title a{
 	margin-top: 250px;
-	margin-left: 5%;
+	
+	margin-right: 25%;
 
 }
 .demo-card-wide > .mdl-card__title {
@@ -28,8 +32,7 @@
 }
 .center-items{
 	justify-content: center;
-	margin-left: 35%;
-	height: 35%;
+	margin: auto;
 }
 .mdl-card__supporting-text h1{
 	color: black;

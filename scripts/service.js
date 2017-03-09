@@ -26,7 +26,12 @@ myApp.factory('dataService',function($http,$window){
 		}
 
 	};
-
+	obj.reset=function(){
+		obj.answers=[];
+		obj.ques_index=0;
+		obj.score=0;
+		obj.names="";
+	}
 
 	return obj;
 });

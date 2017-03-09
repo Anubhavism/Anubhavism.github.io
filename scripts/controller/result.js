@@ -6,7 +6,7 @@ myApp.controller('ResultCtrl',function($scope,dataService){
 
 		}
 		if(option.id==$scope.data.answers[question.id-1] && option.id!=question.correct){
-			return "wrong";
+			return "incorrect";
 		}
 		if(option.id==question.correct){
 			return "correct";
@@ -18,7 +18,7 @@ myApp.controller('ResultCtrl',function($scope,dataService){
         var data = google.visualization.arrayToDataTable([
           ['Status', 'Count'],
           ['Correct',     $scope.data.score],
-          ['Wrong',      5-$scope.data.score]
+          ['Incorrect',      5-$scope.data.score]
         ]);
 
         var options = {

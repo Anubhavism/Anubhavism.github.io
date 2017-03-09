@@ -1,7 +1,7 @@
 
 .demo-card-wide-1.mdl-card,.demo-card-wide.mdl-card{
-  width: 80%;
-  margin: 1% 10%;
+  width: 90%;
+  margin: 1% 5%;
 
  
 }
@@ -55,7 +55,7 @@
 	cursor: pointer;
 	width: 75%;
 }
-.wrong{
+.incorrect{
   	border-bottom: 0.5px solid red;
 }
 .correct{
@@ -65,7 +65,7 @@
 .material-icons.red600 { color: red;float: right; }
 
 #donutchart{
-	height: 90%;
+	
 
 }
 .mdl-card__actions{

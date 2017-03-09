@@ -2,7 +2,11 @@
 
 	<div class="mdl-card__title">
 		<div class="mdl-layout-spacer"></div>
-    	<h2 class="mdl-card__title-text">Result!!</h2>
+    	<h1 class="mdl-card__title-text">Result</h1>
+    	<div class="mdl-layout-spacer"></div>
+    	<a class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" href="#/">
+  		<i class="material-icons">home</i>
+		</a>
     	<div class="mdl-layout-spacer"></div>
   	</div>
   	<div class="mdl-card__supporting-text">
@@ -15,13 +19,13 @@
 			<div class="ques-box" ng-repeat="question in data.content">
 				<h1 class="mdl-card__title-text">{{question.id}}.{{question.ques}}</h1>
 				<ul class="mdl-list">
-					<li class="mdl-list-item options-class" ng-repeat="option in question.options" ng-class="setColor(option,question)">{{option.label}}<i class="material-icons red600" ng-show="setColor(option,question)=='wrong'">error</i><i class="material-icons green600" ng-show="setColor(option,question)=='correct'">done</i></li>
+					<li class="mdl-list-item mdl-js-ripple-effect options-class" ng-repeat="option in question.options" ng-class="setColor(option,question)">{{option.label}}<i class="material-icons red600" ng-show="setColor(option,question)=='wrong'">error</i><i class="material-icons green600" ng-show="setColor(option,question)=='correct'">done</i></li>
 				</ul>
 			<hr/>
 		</div>
 	</div> 
 	<div class="mdl-card__actions mdl-card--border">
-    	<a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent center-items" href="#/">
+    	<a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" href="#/">
   		Play Again
 		</a>
   	</div>

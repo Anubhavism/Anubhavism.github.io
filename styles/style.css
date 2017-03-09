@@ -1,7 +1,7 @@
 
 .demo-card-wide-1.mdl-card,.demo-card-wide.mdl-card{
   width: 80%;
-  margin: 3% 10%;
+  margin: 1% 10%;
 
  
 }
@@ -9,20 +9,28 @@
   color: #fff;
   height: 300px;
   background: url('../static-data/friends.jpg') center / cover;
+  text-align: center;
+}
+.demo-card-wide > .mdl-card__title a{
+	margin-top: 250px;
+	margin-left: 5%;
+
 }
 .demo-card-wide > .mdl-card__title {
   color: #fff;
-  height: 200px;
+  height: 300px;
   background-color: indigo;
+  text-align: center;
 }
 .demo-card-wide-1 > .mdl-card__menu {
   color: #fff;
   
 }
-/*.center-items{
+.center-items{
 	justify-content: center;
 	margin-left: 35%;
-}*/
+	height: 35%;
+}
 .mdl-card__supporting-text h1{
 	color: black;
 }
@@ -59,4 +67,7 @@
 #donutchart{
 	height: 90%;
 
+}
+.mdl-card__actions{
+	text-align: center;
 }

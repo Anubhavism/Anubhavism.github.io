@@ -16,6 +16,7 @@
     "tests"
   ],
   "dependencies": {
-    "lumx": "^1.4.9"
+    "lumx": "^1.4.9",
+    "angular-route": "^1.6.3"
   }
 }

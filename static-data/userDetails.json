@@ -1,0 +1,37 @@
+[
+	{
+		"id": 1,
+		"name": "Anubhav Rai",
+		"DP": "anubhav.jpg",
+		"status" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ita ne hoc quidem modo paria peccata sunt. Negare non possum. Non risu potius quam oratione eiciendum? Duo Reges: constructio interrete. Ut optime, secundum naturam affectum esse possit. Non minor, inquit, voluptas percipitur ex vilissimis rebus quam ex pretiosissimis.",
+		"Like" : 10,
+		"Comment": 20,
+		"Share" : 1,
+		"image" : "img01.jpg",
+		"time": 3
+	},
+	{
+		"id": 2,
+		"name": "Aparajita Tiwari",
+		"DP": "default-dp.jpg",
+		"status" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+		"Like" : 100,
+		"Comment": 29,
+		"Share" : 19,
+		"image" : "img02.jpeg",
+		"time": 4
+	},
+	{
+		"id": 3,
+		"name": "Alafazam Khan",
+		"DP": "default-dp.jpg",
+		"status" : "Lorem ipsum",
+		"Like" : 19,
+		"Comment": 59,
+		"Share" : 67,
+		"image" : "img03.jpg",
+		"time": 9
+	}
+
+
+]

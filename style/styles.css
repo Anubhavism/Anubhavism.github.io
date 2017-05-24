@@ -1,0 +1,202 @@
+
+body{
+	font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    background-color: #e9ebee;
+}
+.navbar{
+	background-color: #365899;
+	display: flex;
+    align-items: center;
+	height: 8vh;
+}
+.navbar-brand{
+	float: right;
+	margin-left: 20px;
+}
+.input-group{
+	margin-left: 0;
+	margin-top: 15px;
+	
+}
+
+.affix{
+	z-index: 4;
+	
+}
+.head{
+	background-color: #365899;
+	display: flex;
+    align-items: center;
+
+}
+.container{
+	
+	padding: 0;
+	margin: 8vh 0 0 0;
+}
+ li a{
+	color: white;
+}
+
+#bs-example-navbar-collapse-1,.navbar-header{
+	margin: 0;
+}
+
+.right-nav{
+	margin-right: 15%;
+	display: flex;
+	align-items: center;
+}
+.form-control{
+	width: 30%;
+	line-height: 0.8em;
+}
+.logo{
+	width: 30px;
+	height: 30px;
+}
+.status-button{
+	padding: 5px;
+	border: 1px solid gray;
+	border-radius: 15px;
+	margin-left: 15px;
+	margin-bottom: 5px;
+}
+.status-content{
+	height: 70px;
+}
+
+.list-group-items{
+	border: none;
+	background: inherit;
+}
+.icon{
+	width: 25px;
+	height: 25px;
+}
+
+.glyphicon.glyphicon-question-sign{
+	font-size: 25px;
+}
+.first{
+	float: left;
+	
+	margin-top: 20px;
+	
+
+}
+.second{
+	margin-top: 20px;
+	
+}
+
+.fourth{
+	float: right;
+	height: 90vh;
+
+}
+.smallfeed,.chat{
+	height: 45vh;
+	overflow-y: scroll;
+	background-color: #e9ebee;
+	overflow: auto;
+	margin: 0;
+}
+::-webkit-scrollbar {
+    width: 0px;  
+    
+}
+.status{
+	background: white;
+	padding: 0;
+}
+.status-cotent{
+	display: inline-block;
+}
+.dp{
+	display: inline-block;
+	width: 10%;
+	height: 20%;
+}
+textarea{
+	width: 80%;
+	height: 10vh;
+	display: inline-block;
+	outline: none;
+}
+textarea, .dp{
+	margin: 0;
+}
+
+.img-responsive{
+	padding: 10px;
+}
+textarea::placeholder{
+	font-size: 15px;
+}
+.dp{
+	width: 60px;
+	height: 60px;
+	margin: 10px;
+}
+.status-content div{
+	margin: 0;
+}
+textarea:focus{
+	outline: none;
+	
+}
+
+.card,.advert{
+	background-color: white;
+	border-radius: 5px;
+	}
+	
+.advert{
+	text-align: center;
+	overflow: auto;
+	padding: 5px;
+}
+.third{
+	margin-top: 20px;
+}
+
+.advert-content{
+
+}
+.left{
+	float: left;
+
+}
+.right{
+	float: right;
+}
+.card-content{
+	margin-top: 10px;
+	padding: 0 10px;
+	overflow: hidden;
+	font-size: 18px;
+}
+
+.content-image{
+	min-width: 100%;
+	min-height: 100%;
+
+}
+.card-footer{
+	padding: 0;
+	height: 10px;
+}
+.card-footer-icon{
+	font-size: 18px;
+	width: 19px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	border: 1px solid blue;
+}
+.card-footer-text{
+	display: flex;
+}
+
